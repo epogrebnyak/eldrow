@@ -1,13 +1,14 @@
 # eldrow
 Demo of Wordle game for educational purposes
 
-## `eldrow` (reverse of `wordle`):
+Features:
 
-- uses 8389 words collection distilled from from https://github.com/dwyl/english-words
-- `Wordle` class holds secret word (that can be chosen at random) and guess attempts history
-- `.ask()` method provides feedback on your guess
+- uses 8389 word dictionary distilled from from https://github.com/dwyl/english-words
+- `Wordle` class holds secret word (that can be chosen at random) and attempts history
+- `.ask()` method provides feedback on a guess
 - `___m_` is letters on own spot and `m.op.` is letters contained in a hidden word at different spots
 - `.reveal()` tells you the hidden word
+- `eldrow` name is a reverse of `wordle`
 
 ## Simple code
 
