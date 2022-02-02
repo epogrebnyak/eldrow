@@ -1,7 +1,9 @@
 # eldrow
 Demo of Wordle game for educational purposes
 
-Features:
+[Colab](https://colab.research.google.com/drive/1sVD3EhZoMYriY4VjXAUqZFLF33R3zNtQ#scrollTo=pe7gqHzz0L-_)
+
+## Features
 
 - uses 8389 word dictionary distilled from from https://github.com/dwyl/english-words
 - `Wordle` class holds secret word (that can be chosen at random) and attempts history
