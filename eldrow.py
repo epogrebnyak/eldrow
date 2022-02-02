@@ -36,19 +36,19 @@ def just_contains(hidden: str, guess: str) -> str:
 
 
 class Wordle:
-    def __init__(self, hidden):
-        self._hidden = hidden
+    def __init__(self, hidden_word):
+        self._hidden_word = hidden_word
         self.attempts = []
 
     def ask(self, guess: str):
-        inplace = correct_spot(self._hidden, guess)
-        found = just_contains(self._hidden, guess)
+        inplace = correct_spot(self._hidden_word, guess)
+        found = just_contains(self._hidden_word, guess)
         res = guess, inplace, found
         self.attempts.append(res)
         return res
 
     def reveal(self):
-        return self._hidden
+        return self._hidden_word
 
 
 def random_wordle(words: List[str]) -> Wordle:

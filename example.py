@@ -1,9 +1,10 @@
-from random import sample
-from eldrow import get_word_list, random_wordle
+from random import sample, choice
+from eldrow import get_word_list, Wordle
 
 words = get_word_list()
-w = random_wordle(words)
-for i, guess in enumerate(sample(words, 6)):
+w = Wordle(hidden_word=choice(words))
+guesses = sample(words, 6)
+for i, guess in enumerate(guesses):
     guess, spots, contains = w.ask(guess)
-    print(f"{i+1}: {guess} {spots} {contains}")
-print(" Answer:", w.reveal())
+    print(i+1, "->", guess, spots, contains)
+print("   Answer:", w.reveal())
